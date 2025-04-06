@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: Task
+  data:
+    redis:
+      host: localhost
+      port: 6380
+
+logging:
+  file:
+    name: result.log

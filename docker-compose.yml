@@ -1,0 +1,10 @@
+services:
+  redis:
+    container_name: school-redis
+    image: redis:7.2-alpine
+    command: redis-server --port 6380
+    labels:
+      - "name=redis"
+      - "mode=standalone"
+    ports:
+      - 6380:6380
